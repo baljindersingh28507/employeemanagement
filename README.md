@@ -22,7 +22,7 @@
               Npm version > 6.0
               React.js > 17.0
               
-  Instructions 
+Instructions 
 To build the application you need to have node.js and Npm manager installed.
 
 Using the Windows 10 SDK:
