@@ -16,3 +16,7 @@
 - Database: mongo.db
 - Test: Jest Package
 
+## Installation
+- Frontend:
+Prequisite: Node.js version 12.
+
