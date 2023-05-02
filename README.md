@@ -11,7 +11,7 @@
 - [Deployment](#deployment)
 
 # Technology Stack
-Frontend: React.js library
-Backend: node.js/ Express
-Database: mongo.db
+- Frontend: React.js library
+- Backend: node.js/ Express
+- Database: mongo.db
 
