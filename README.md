@@ -30,3 +30,9 @@ To build the application you need to have node.js and Npm manager installed.
 Installation of Frontend:
 
 1 First clone project url  https://github.com/baljindersingh28507/employeemanagement.git
+
+2 Navigate to project folder and choose frontend folder.
+
+3 In Terminal enter command  npm install
+
+4 To run locally enter command npm start
