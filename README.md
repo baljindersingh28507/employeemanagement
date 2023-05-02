@@ -6,10 +6,11 @@
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
+- [Technology Stack](#installation)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- [API Details](#usage)
+- [Tests](#credits)
+- [Deployment](#license)
 
 
 
