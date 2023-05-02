@@ -10,8 +10,9 @@
 - [Tests](#test)
 - [Deployment](#deployment)
 
-# Technology Stack
+## Technology Stack
 - Frontend: React.js library
 - Backend: node.js/ Express
 - Database: mongo.db
+- Test: Jest Package
 
