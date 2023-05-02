@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* CRUD TABLE END */
+
+.center {
+  display: flex;
+  justify-content: left;
+}
+
+.App {
+  margin: 'auto';
+  width: 'fit-content';
+  padding: 0.01em 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* th {
+  background-color: lightgray;
+} */
+th {
+  background-color: #ADD8E6;
+  color: #fff;
+}
+
+tfoot td {
+  text-align: center;
+  padding: 16px;
+  background-color: lightgray;
+}
+
+button {
+  margin: 4px;
+}
+
+button {
+  padding: 8px 35px;
+  font-size: 14px;
+  background: #ADD8E6;
+  color: #fff;
+  border: 1px solid #ADD8E6;
+  font-weight: 600;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.alert p {
+  margin: 0;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.dialog label {
+  margin-top: 8px;
+}
+
+.dialog input {
+  margin-bottom: 16px;
+}
+
+.dialog button {
+  margin-top: 8px;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu>li {
+  margin: 0;
+
+  background-color: white;
+}
+
+.menu>li:hover {
+  background-color: lightgray;
+}
+
+.menu>li>button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+/*------------------  */
+tr h1.center {
+  font-size: 16px;
+}
+
+.App h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+td {
+  min-width: 200px;
+  text-align: left;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #efeaff;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog form {
+  width: 60%;
+  margin: auto;
+}
+
+.dialog form input {
+  width: 96%;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+.dialog form select {
+  width: 96%;
+  margin: auto;
+  padding: 10px 0px;
+}
+
+.dialog label {
+  width: 96%;
+  margin: 20px 0px 7px;
+}
+
+.dialog button {
+  margin-top: 8px;
+  min-width: 200px;
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background: #8f41b5;
+  border: none;
+  z-index: 1;
+  position: relative;
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ADD8E6;
+  border-radius: 0px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+button:active {
+  top: 2px;
+}
+
+.alert div {
+  background: #fff;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.alert p {
+  margin: 0px 0px 20px;
+  padding: 0;
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+}
+
+table {
+  position: relative;
+  z-index: 0 !important;
+}
+
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+}

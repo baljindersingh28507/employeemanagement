@@ -14,6 +14,7 @@ app.use('/user', userRoutes)
 app.use('/position', positionRoutes)
 //Handled error 
 app.use(errorHandler)
+
 //Handle 500 error
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
