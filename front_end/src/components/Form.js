@@ -63,6 +63,7 @@ function Form({ editingRow, onSubmit, onCancel }) {
 
     return (
         <form onSubmit={handleSubmit}>
+            
             <label htmlFor="name">First Name:</label>
             <input type="text" id="name" required value={firstName} onChange={(event) => setName(event.target.value)} />
             <label htmlFor="lastName">Last Name:</label>

@@ -55,7 +55,6 @@ const SeniorDeveloper = ({ value, updated }) => {
     editDataAPI(editingRow._id, newRow);
     updated(newRow.positionId)
     setEditingRow(null);
-
   };
 
   const handleFormCancel = () => {

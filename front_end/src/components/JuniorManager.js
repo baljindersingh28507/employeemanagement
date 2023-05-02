@@ -51,14 +51,12 @@ const editDataAPI = async (id, data) => {
 
 
 const handleFormSubmit = (newRow) => {
-
       setData((data) =>
           data.map((row) => (row.id === editingRow.id ? { ...row, ...newRow } : row))
       );
       editDataAPI(editingRow._id, newRow);
       updated(newRow.positionId)
       setEditingRow(null);
-
 };
 
   const handleFormCancel = () => {

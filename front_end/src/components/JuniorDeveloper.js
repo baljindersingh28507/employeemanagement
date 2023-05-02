@@ -61,7 +61,6 @@ const JuniorDeveloper = ({ value, updated }) => {
         });
     };
 
- 
     /** 
      * @param {*} newRow
      * On Clickedit form submit its update on database by fetching API 

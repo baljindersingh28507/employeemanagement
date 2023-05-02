@@ -61,6 +61,7 @@ const Director = ({ value, updated }) => {
     const handleFormCancel = () => {
         setEditingRow(null);
     };
+    
     return (<>
         <div className="App">
             {alert && (
