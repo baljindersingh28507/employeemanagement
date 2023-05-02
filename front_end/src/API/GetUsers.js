@@ -1,6 +1,7 @@
 import axios from "axios";
 import { getPositionByName } from "./GetPositionByName";
 import { API_BASE_URL } from "../config";
+
 export const handleFetchData = async (name) => {
     const { data } = await getPositionByName(name);
     if (data.data.length) {
