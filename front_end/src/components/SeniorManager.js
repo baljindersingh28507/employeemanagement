@@ -24,7 +24,6 @@ const SeniorManger = ({value, updated}) => {
     useEffect(() => {
         if(value === "Senior Manager"){
             fetchData();
-            updated('')
         }
         
     }, [value])
@@ -53,7 +52,7 @@ const SeniorManger = ({value, updated}) => {
                 data.map((row) => (row.id === editingRow.id ? { ...row, ...newRow } : row))
             );
             editDataAPI(editingRow._id, newRow);
-            updated(newRow.positionId._id)
+            updated(newRow.positionId)
             setEditingRow(null);
   
     };

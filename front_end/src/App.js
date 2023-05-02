@@ -12,8 +12,12 @@ import { getPositionById } from "./API/GetPositionById";
 function App() {
   const [update, setUpdate] = useState('');
   const updated = async (value) => {
-    const { data } = await getPositionById(value)
-    setUpdate(data.data[0].positionTitle)
+    console.log(value);
+    if(value){
+      const { data } = await getPositionById(value)
+      setUpdate(data.data[0].positionTitle)
+    }
+    
   }
   return (
     <>

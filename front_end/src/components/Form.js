@@ -18,7 +18,7 @@ function Form({ editingRow, onSubmit, onCancel }) {
     const position = async()=>{
         const {data} = await getPosition();
         let values = []
-        setSelectedOption(data?.data[1]?._id)
+        // 
         for(let value of data.data) {
             if(value.positionTitle !== 'Director')
             values.push({value: value._id, label: value.positionTitle})
@@ -29,12 +29,14 @@ function Form({ editingRow, onSubmit, onCancel }) {
 
     useEffect(() => {
         position();
+        console.log(editingRow)
         if (editingRow) {
             setName(editingRow?.firstName);
             setLastName(editingRow?.lastName)
             setEmployeeNumber(editingRow?.employeeNumber);
             setSelectedOption(editingRow?.positionId?._id);
         } else {
+            setSelectedOption(option[1].value)
             setName("");
             setLastName("");
             setEmployeeNumber("");

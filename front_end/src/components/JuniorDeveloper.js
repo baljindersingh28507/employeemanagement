@@ -40,7 +40,6 @@ const JuniorDeveloper = ({ value, updated }) => {
     useEffect(() => {
         if (value === "Junior Developer") {
             fetchData();
-            updated('')
         }
     }, [value])
 
@@ -72,7 +71,7 @@ const JuniorDeveloper = ({ value, updated }) => {
             data.map((row) => (row.id === editingRow.id ? { ...row, ...newRow } : row))
         );
         await handleEdit(editingRow._id, newRow);
-        updated(newRow.positionId._id)
+        updated(newRow.positionId)
         fetchData();
         setEditingRow(null);
 

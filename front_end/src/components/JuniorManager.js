@@ -27,7 +27,6 @@ const JuniorManager = ({value, updated}) => {
   useEffect(() => {
     if(value === "Junior Manager"){
         fetchData();
-        updated('')
     }
     
 }, [value])
@@ -57,7 +56,7 @@ const handleFormSubmit = (newRow) => {
           data.map((row) => (row.id === editingRow.id ? { ...row, ...newRow } : row))
       );
       editDataAPI(editingRow._id, newRow);
-      updated(newRow.positionId._id)
+      updated(newRow.positionId)
       setEditingRow(null);
 
 };
