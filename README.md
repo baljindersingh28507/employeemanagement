@@ -1,7 +1,5 @@
-Prerequisites
-Before you can host your Node.js and React code on a server, you must have the following software installed on your server:
-=======
-# Employment Management Project
+
+# Employee Management Project
 
 # Its a web based application to show employees with designation.
 
