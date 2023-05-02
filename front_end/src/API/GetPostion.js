@@ -1,7 +1,7 @@
 import axios from "axios";
-
+import { API_BASE_URL } from "../config";
 export const getPosition = (editingId, formData) => {
-   return axios.get(`http://localhost:8000/position`)
+   return axios.get(`${API_BASE_URL}position`)
     .then((data) => {
         return data
     })
