@@ -26,10 +26,11 @@ Instructions
 
 To build the application you need to have node.js and Npm manager installed.
 
-installation of Frontend:
+Installation of Frontend:
 
-First clone project url  https://github.com/baljindersingh28507/employeemanagement.git
-go to project folder by using command .
+1 First clone project url  https://github.com/baljindersingh28507/employeemanagement.git
+
+2 go to project folder and select frontend .
 Select the target 'Device'.
 Press F5 to build the project and run it on the device.
 Alternatively you can also build the example for the emulator (x86) in which case the Steps will use simulated data. In order to use the emulator, you need to uncomment the code block in StepsEngine to use the emulator, and include Lumia.Sense.Testing.
