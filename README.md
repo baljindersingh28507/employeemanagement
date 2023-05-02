@@ -18,5 +18,6 @@
 
 ## Installation
 - Frontend:
-Prequisite: Node.js version 12.
+# Prequisite: Node.js version 12.1
+              Npm version > 6.0
 
